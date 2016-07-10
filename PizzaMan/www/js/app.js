@@ -23,6 +23,10 @@ angular.module('starter', ['ionic'])
   });
 })
 
+
+
+.value('apiUrl', 'http://pizzamanapi.azurewebsites.net/api/');
+
 .config(function($stateProvider, $urlRouterProvider) {
 
   $stateProvider
