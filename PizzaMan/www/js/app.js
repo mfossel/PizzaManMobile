@@ -12,7 +12,7 @@ angular.module('pizza', ['ionic', 'pizza.controllers'])
   });
 })
 
-.value('apiUrl', 'http://pizzamanapi.azurewebsites.net/api/');
+.value('apiUrl', 'http://pizzamanapi.azurewebsites.net/api/')
 
 .config(function($stateProvider, $urlRouterProvider) {
 
@@ -22,7 +22,7 @@ angular.module('pizza', ['ionic', 'pizza.controllers'])
       url: '/home',
       templateUrl: 'templates/home.html',
       controller: 'HomeCtrl'
-    },
+    })
 
     .state('pizzeria', {
       url: '/pizzera',

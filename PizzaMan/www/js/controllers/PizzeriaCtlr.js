@@ -1,6 +1,6 @@
-angular.module('starter.controllers' [])
+angular.module('starter.controllers', [])
 
-.controller('PizzeriaCtrl', function($scope, $state, $window) {
+.controller('PizzeriaCtrl', function($scope, $state, $window, PizzeriaRestService) {
  
     function activate() {
         $scope.pizzerias = PizzeriaRestService.query();

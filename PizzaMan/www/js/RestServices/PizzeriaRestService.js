@@ -1,4 +1,4 @@
-angular.module('app').factory('PizzeriaRestService', function (apiUrl, $resource) {
+angular.module('starter').factory('PizzeriaRestService', function (apiUrl, $resource) {
     return $resource(apiUrl + 'pizzerias/:pizzeriaId', { submissionId: '@PizzeriaId' },
     {
         'update': {
